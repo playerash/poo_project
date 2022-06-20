@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:poo_project/app/pages/jokenpo_controller.dart';
+import 'package:poo_project/app/controller/jokenpo_controller.dart';
 import 'package:provider/provider.dart';
 
 class JokenpoScreen extends StatelessWidget {
