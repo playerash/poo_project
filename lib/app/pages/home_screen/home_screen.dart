@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:poo_project/app/pages/jogo_velha/jogo_velha.dart';
 import 'package:poo_project/app/pages/jokenpo_screen/jokenpo_screen.dart';
-//import 'package:poo_project/app/pages/par_impar_screen/par_impar_screen.dart';
+import 'package:poo_project/app/pages/par_impar_screen/par_impar_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Jogos'),
+        title: const Text('Jogos'),
       ),
       body: Center(
         child: Column(
@@ -19,22 +20,26 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => JokenpoScreen(),
+                        builder: (context) => const JokenpoScreen(),
                       ));
                 },
-                child: Text("Jokenpo")),
+                child: const Text("Jokenpo")),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => JokenpoScreen()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ParImparScreen()));
                 },
-                child: Text("Par ou Impar")),
+                child: const Text("Par ou Impar")),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => JokenpoScreen()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const JogoVelha()));
                 },
-                child: Text("")),
+                child: const Text("Jogo da Velha")),
           ],
         ),
       ),

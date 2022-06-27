@@ -11,17 +11,17 @@ class JokenpoScreen extends StatelessWidget {
         Provider.of<JokenpoController>(context, listen: true);
     return Scaffold(
       appBar: AppBar(
-        title: Text("JOKENPO"),
+        title: const Text("JOKENPO"),
         backgroundColor: Colors.greenAccent,
         elevation: 0,
       ),
       backgroundColor: Colors.greenAccent,
       body: Column(
         children: [
-          Text("CPU"),
+          const Text("CPU"),
           Image.asset(_jokenpoController.statusImage),
           Text(_jokenpoController.status),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Row(

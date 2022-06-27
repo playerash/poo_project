@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:poo_project/app/controller/jogo_velha_controller.dart';
 import 'package:poo_project/app/controller/par_impar_controller.dart';
 import 'package:poo_project/app/pages/home_screen/home_screen.dart';
 import 'package:poo_project/app/controller/jokenpo_controller.dart';
@@ -13,8 +14,9 @@ class AppWidget extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (context) => JokenpoController()),
         ChangeNotifierProvider(create: (context) => ParImparController()),
+        ChangeNotifierProvider(create: (context) => JogoVelhaController()),
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         home: HomeScreen(),
       ),
     );

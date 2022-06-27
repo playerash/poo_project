@@ -12,7 +12,7 @@ class JogoVelha extends StatelessWidget {
         Provider.of<JogoVelhaController>(context, listen: true);
     return Scaffold(
       appBar: AppBar(),
-      body: Container(
+      body: SizedBox(
         child: Column(
           children: [
             Row(children: const [

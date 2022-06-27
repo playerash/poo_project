@@ -43,7 +43,7 @@ class _SquareJogoVelhaState extends State<SquareJogoVelha> {
               )
             : _jogoVelhaController.whosPlay == JogoVelhaStatus.bola
                 ? Container(
-                    child: Icon(
+                    child: const Icon(
                       Icons.circle_outlined,
                       size: 30,
                     ),
@@ -52,7 +52,7 @@ class _SquareJogoVelhaState extends State<SquareJogoVelha> {
                     color: Colors.red,
                   )
                 : Container(
-                    child: Center(child: Text("X")),
+                    child: const Center(child: Text("X")),
                     width: 100,
                     height: 100,
                     color: Colors.blue,
