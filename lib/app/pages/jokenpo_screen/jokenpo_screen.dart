@@ -30,19 +30,19 @@ class JokenpoScreen extends StatelessWidget {
               InkWell(
                 child: Image.asset("assets/pedra.png", scale: 1.3),
                 onTap: () {
-                  _jokenpoController.setPlayerStatus(0);
+                  _jokenpoController.setPlayerStatus(1);
                 },
               ),
               InkWell(
                 child: Image.asset("assets/papel.png", scale: 1.3),
                 onTap: () {
-                  _jokenpoController.setPlayerStatus(1);
+                  _jokenpoController.setPlayerStatus(2);
                 },
               ),
               InkWell(
                 child: Image.asset("assets/tesoura.png", scale: 1.3),
                 onTap: () {
-                  _jokenpoController.setPlayerStatus(2);
+                  _jokenpoController.setPlayerStatus(3);
                 },
               ),
             ],

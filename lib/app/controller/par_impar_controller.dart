@@ -15,7 +15,7 @@ class ParImparController extends ChangeNotifier {
   }
 
   setPlayerNumber(int number) {
-    cpuNumber = number;
+    playerNumber = number;
     _setCPUNumber();
     _setStatusGame();
     notifyListeners();
